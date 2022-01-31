@@ -1,0 +1,35 @@
+<section class="sptb">
+    <div class="container">
+        <div class="card mb-0">
+            <div class="card-body">
+                <div class="table-responsive push">
+                    <table class="table table-bordered table-hover text-nowrap">
+                        <tbody>
+                            <tr>
+                                <th class="font-weight-bold text-center ">user</th>
+                                <th class="font-weight-bold text-center">Verification Status</th>
+                                <th class="font-weight-bold">Action</th>
+                            </tr>
+                            <tr *ngFor="let item of data">
+                                <td class="text-center">{{item.user}}</td>
+                                <td class="text-center">
+                                    {{item.isVerified}}
+                                </td>
+                                <td class="text-center">
+                                    <button class="btn btn-secondary" (click)="verified()">{{btnVal}}</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr class="text-center">
+                                <td class="text-center" colspan="5">
+                                    <button class="btn btn-secondary" (click)="Allverified()">All Verified?</button>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

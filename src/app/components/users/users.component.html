@@ -1,0 +1,29 @@
+<section class="sptb">
+    <div class="container">
+        <div class="card mb-0">
+            <div class="card-body">
+                <div class="table-responsive push">
+                    <table class="table table-bordered table-hover text-nowrap">
+                        <tbody>
+                            <tr>
+                                <th class="font-weight-bold text-center ">ID</th>
+                                <th class="font-weight-bold text-center">Name</th>
+                                <th class="font-weight-bold text-center">Email</th>
+                                <th class="font-weight-bold text-center">Gender</th>
+                                <th class="font-weight-bold text-center">Status</th>
+                            </tr>
+                            <tr *ngFor="let item of UsersList">
+                                <td class="text-center">{{item.id}}</td>
+                                <td class="text-center">{{item.name}}</td>
+                                <td class="text-center">{{item.email}}</td>
+                                <td class="text-center">{{item.gender}}</td>
+                                <td class="text-center">{{item.status}}</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
